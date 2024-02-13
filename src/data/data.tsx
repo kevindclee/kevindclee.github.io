@@ -2,9 +2,9 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  CalendarIcon,
-  FlagIcon,
-  MapIcon,
+  // CalendarIcon,
+  // FlagIcon,
+  // MapIcon,
   SparklesIcon,
   EnvelopeIcon,
   PhoneIcon,
@@ -12,10 +12,10 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -47,8 +47,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Kevin Lee\'s Personal Website',
-  description: "Kevin Lee\'s Personal Website built with nextjs and tailwindcss",
+  title: "Kevin Lee's Personal Website",
+  description: "Kevin Lee's Personal Website built with nextjs and tailwindcss",
 };
 
 /**

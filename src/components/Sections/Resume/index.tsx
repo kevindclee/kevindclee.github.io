@@ -1,6 +1,7 @@
 import {FC, memo} from 'react';
 
-import {education, experience, projects, publications, involvement, skill, SectionId, skills} from '../../../data/data';
+// import {education, experience, projects, publications, involvement, skill, SectionId, skills} from '../../../data/data';
+import {education, experience, projects, publications, involvement, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';
@@ -92,7 +93,7 @@ const Resume: FC = memo(() => {
               <img className="h-5" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=plastic&logo=tailwind-css&logoColor=white" />
               <img className="h-5" src="https://img.shields.io/badge/Neo4j-008CC1?style=plastic&logo=neo4j&logoColor=white" /> 
           </p>
-          {/* <br></br> */}
+          {/* <br></br> */} 
           <p className="grid grid-cols-1 gap-4 my-2 md:grid-cols-5">
               <img className="h-5" alt="git" src="https://img.shields.io/badge/-Git-F05032?style=plastic&logo=git&logoColor=white" />
               <img className="h-5" alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=plastic&logo=html5&logoColor=white" />
