@@ -6,6 +6,9 @@ import {
   FlagIcon,
   MapIcon,
   SparklesIcon,
+  EnvelopeIcon,
+  PhoneIcon,
+  GlobeAmericasIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -44,21 +47,25 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Kevin Lee\'s Personal Website',
+  description: "Kevin Lee\'s Personal Website built with nextjs and tailwindcss",
 };
 
 /**
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
+  Hero: 'home',
   About: 'about',
   Contact: 'contact',
   Portfolio: 'portfolio',
-  Resume: 'resume',
+  Education: 'education',
+  Experience: 'experience',
+  Projects: 'projects',
+  Publications: 'publications',
+  Involvement: 'involvement',
+  Skill: 'skills',
   Skills: 'skills',
-  Stats: 'stats',
   Testimonials: 'testimonials',
 } as const;
 
@@ -69,33 +76,40 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Kevin Lee`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
         at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
         registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
+      </p> */}
+      <p className="prose-sm text-stone-200 mx-10 sm:prose-base lg:prose-lg">
+        Hi! I'm <strong className="text-stone-100">Kevin</strong>, Computer Science Masters student at <strong className="text-stone-100">Purdue University</strong>. 
+        <br></br>
+        My interest areas are: <strong className="text-stone-100">AI/ML, NLP, and LLMs</strong>. 
+        <br></br>
+        I am currently looking for following jobs: 
+        <br></br>
+        <strong className="text-stone-100">AI/ML Engineer, Data Scientist, Software Engineer or Fullstack Developer</strong>.
+      </p> 
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: '/CV (Kevin Lee).pdf',
+      text: 'Download CV',
       primary: true,
       Icon: ArrowDownTrayIcon,
+      target: "_blank", 
+      rel: "noopener noreferrer",
+      locale: false,
     },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
-    },
+    // {
+    //   href: `#${SectionId.Contact}`,
+    //   text: 'Contact',
+    //   primary: false,
+    // },
   ],
 };
 
@@ -108,12 +122,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Email', text: 'kevindclee@gmail.com', Icon: EnvelopeIcon},
+    {label: 'Phone', text: '(380) 997-8856', Icon: PhoneIcon},
+    {label: 'Nationality', text: 'American / Korean', Icon: GlobeAmericasIcon},
+    {label: 'Interests', text: 'AI/ML, NLP, LLMs', Icon: SparklesIcon},
+    {label: 'Study', text: 'Purdue Univ., The Ohio State Univ.', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Purdue Univ., Wexner Medical Center', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -129,11 +143,11 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Korean',
+        level: 10,
       },
       {
-        name: 'Spanish',
+        name: 'Japanese',
         level: 3,
       },
     ],
@@ -142,16 +156,16 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
+        name: 'Nextjs',
+        level: 8,
+      },
+      {
         name: 'React',
-        level: 9,
+        level: 8,
       },
       {
         name: 'Typescript',
         level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
       },
     ],
   },
@@ -159,36 +173,32 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Spring',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
+        name: 'Node.js',
+        level: 6,
       },
     ],
   },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
+  // {
+  //   name: 'Mobile development',
+  //   skills: [
+  //     {
+  //       name: 'React Native',
+  //       level: 9,
+  //     },
+  //     {
+  //       name: 'Flutter',
+  //       level: 4,
+  //     },
+  //     {
+  //       name: 'Swift',
+  //       level: 3,
+  //     },
+  //   ],
+  // },
 ];
 
 /**
@@ -268,20 +278,160 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
+    date: 'August 2020 - May 2023',
+    location: 'Purdue University, College of Science',
+    title: 'Master of Science in Computer Science',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
+    date: 'August 2014 - May 2020',
+    location: 'The Ohio State University, College of Engineering',
+    title: 'Bachelor of Science in Computer Science and Engineering',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
+  {
+    date: 'August 2020 - May 2023',
+    location: 'Purdue University, Department of Computer Science',
+    title: 'Graduate Teaching Assistant',
+    content: (
+      <div>
+        <ul>
+          <li>Assisted professor in a Software Development in C class with over 400 students.</li>
+          <li>Designed homework and exam problems with the instruction team.</li>
+          <li>Held lab sessions, office hours, and virtual help sessions to assist students who needed help.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    date: 'May 2019 - May 2020',
+    location: 'Wexner Medical Center, Department of Obstetrics and Gynecology',
+    title: 'Student Research Assistant',
+    content: (
+      <div>
+        <ul>
+          <li>Participated in Virtual Patient research, helping medical students to train for doctor-to-patient conversations.</li>
+          <li>Updated and maintained Speech to Text and Text to Speech components of Virtual Patient applications using Unity, C#, and Java.</li>
+          <li>Gained experience collaborating with a group of professionals from the medical field & natural language processing field.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    date: 'January 2019 - May 2019',
+    location: 'The Ohio State University, Department of Computer Science and Engineering',
+    title: 'Undergraduate Teaching Assistant',
+    content: (
+      <div>
+        <ul>
+          <li>Assisted professor in a Software Development Java class with 42 students.</li>
+          <li>Explained and clarified questions students had during office hours and closed lab.</li>
+          <li>Graded projects and homework; Successfully balanced student workload with teaching workload.</li>
+        </ul>
+      </div>
+    ),
+  },
+];
+
+export const projects: TimelineItem[] = [
+  {
+    date: 'May 2019 - May 2020',
+    location: 'Wexner Medical Center',
+    title: 'Virtual Patient Project',
+    content: (
+      <p>
+        Participated in Virtual Patient research, helping OSU medical students to train for doctor-to-patient conversations. The program was built using Unity 3D, Speech to Text, Neural Networks (CNN, RNN), and Text to Speech. 
+        Updated and maintained Speech to Text and Text to Speech components of Virtual Patient applications using Unity, C#, and Java.
+        <br></br>
+        <br></br>
+        <a className="hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 sm:hover:text-teal-400" href="https://accad.osu.edu/research-gallery/virtual-patient-project" target="_blank" rel="noopener noreferrer">
+          <i>https://accad.osu.edu/research-gallery/virtual-patient-project</i>
+        </a>
+      </p>
+    ),
+  },
+  {
+    date: 'February 2023 - May 2023',
+    location: 'Purdue University',
+    title: 'Backdoor Attack on Language Model Code Generators ',
+    content: (
+      <p>
+        Participated in a project, which aimed to investigate whether inserting trigger words into these models could lead to the generation of malicious code, potentially resulting in a backdoor attack on the user's computer. 
+        Performed writing web scraping code, collecting train set data for GPT-2 code generator model, and implemented trigger insertion code using Python.
+        <br></br>
+        <br></br>
+        <a className="hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 sm:hover:text-teal-400" href="https://github.com/kevindclee/Backdoor-Attack-on-Language-Model-Code-Generators" target="_blank" rel="noopener noreferrer">
+          <i>https://github.com/kevindclee/Backdoor-Attack-on-Language-Model-Code-Generators</i>
+        </a>
+      </p>
+    ),
+  },
+];
+
+export const publications: TimelineItem[] = [
+  {
+    date: 'November 8th, 2022',
+    // location: '',
+    title: 'Artificial intelligence in virtual standardized patients: Combining natural language understanding and rule based dialogue management to improve conversational fidelity',
+    content: (
+      <p>
+        Maicher, K. R., Stiff, A., Scholl, M., White, M., Fosler-Lussier, E., Schuler, W., Lee, K., & Danforth, D. R. et al. (2022). Medical teacher, 1-7. Advance online publication.
+        <br></br>
+        <br></br>
+        <a className="hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 sm:hover:text-teal-400" href="https://doi.org/10.1080/0142159X.2022.2130216" target="_blank" rel="noopener noreferrer">
+          <i>https://doi.org/10.1080/0142159X.2022.2130216</i>
+        </a>
+      </p>
+    ),
+  },
+  // {
+  //   date: 'March 2007 - February 2010',
+  //   location: 'Garage Startup Studio',
+  //   title: 'Junior bug fixer',
+  //   content: (
+  //     <p>
+  //       Describe work, special projects, notable achievements, what technologies you have been working with, and
+  //       anything else that would be useful for an employer to know.
+  //     </p>
+  //   ),
+  // },
+];
+
+export const involvement: TimelineItem[] = [
+  {
+    date: 'September 2023 - December 2023',
+    location: 'Google',
+    title: 'Machine Learning Bootcamp ',
+    content: (
+      <div>
+        <ul>
+          <li>Acquired skills in deep learning, computer vision, and natural language processing.</li>
+          <li>Gained knowledge of TensorFlow and completed Kaggle competition with top 7%.</li>
+          <li>Gained hands-on experience in ResNets, MobileNet, YOLO, U-Net, and Transformer Network.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    date: 'May 2022 - December 2022',
+    location: 'En-core',
+    title: 'Playdata Bootcamp',
+    content: (
+      <div>
+        <ul>
+          <li>Acquired skills in front end & back end development, and artificial intelligence applications.</li>
+          <li>Gained knowledge of JavaScript, React, Next.js, Spring Boot, MySQL, and Python.</li>
+          <li>Gained leadership experience through leading teams and project presentations</li>
+        </ul>
+      </div>
+    ),
+  },
+];
+
+export const skill: TimelineItem[] = [
   {
     date: 'March 2010 - Present',
     location: 'Awesome Development Company',
@@ -365,9 +515,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/kevindclee', target: "_blank", rel: "noopener noreferrer",},
+  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/kevindclee/', target: "_blank", rel: "noopener noreferrer",},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];

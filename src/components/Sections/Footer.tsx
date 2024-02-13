@@ -15,7 +15,15 @@ const Footer: FC = memo(() => (
         <ChevronUpIcon className="h-6 w-6 bg-transparent sm:h-8 sm:w-8" />
       </a>
     </div>
+    <br></br>
     <div className="flex flex-col items-center gap-y-6">
+      <div className="flex gap-x-8 text-neutral-500">
+        <Socials />
+      </div>
+    </div>
+    <br></br>
+    <br></br>
+    {/* <div className="flex flex-col items-center gap-y-6">
       <div className="flex gap-x-4 text-neutral-500">
         <Socials />
       </div>
@@ -29,7 +37,7 @@ const Footer: FC = memo(() => (
         </span>
       </a>
       <span className="text-sm text-neutral-700">© Copyright {currentYear} Tim Baker</span>
-    </div>
+    </div> */}
   </div>
 ));
 

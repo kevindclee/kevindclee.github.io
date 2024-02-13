@@ -32,6 +32,9 @@ interface HeroActionItem {
   text: string;
   primary?: boolean;
   Icon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
+  target?: string;
+  rel?: string;
+  locale?: boolean;
 }
 
 /**
@@ -88,7 +91,7 @@ export interface PortfolioItem {
  */
 export interface TimelineItem {
   date: string;
-  location: string;
+  location?: string;
   title: string;
   content: JSX.Element;
 }
@@ -147,4 +150,6 @@ export interface Social {
   label: string;
   Icon: FC<IconProps>;
   href: string;
+  target?: string;
+  rel?: string;
 }

@@ -4,7 +4,15 @@
 const nextConfig = {
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
-
+    // config.module.rules.push({
+    //   test: /\.pdf$/,
+    //   use: {
+    //     loader: 'file-loader',
+    //     options: {
+    //       name: '/public/resume.pdf',
+    //     },
+    //   },
+    // });
     // Next 12 has multiple TS loaders, and we need to update all of them.
     const tsRules = oneOfRule.oneOf.filter(rule => rule.test && rule.test.toString().includes('tsx|ts'));
 
