@@ -1,9 +1,10 @@
 import {FC, memo} from 'react';
 
 import {TimelineItem} from '../../../data/dataDef';
+import Image from 'next/image';
 
 const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
-  const {title, date, location, content} = item;
+  const {title, date, location, content, itemImage} = item;
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
       <div className="flex flex-col pb-4">
@@ -27,6 +28,14 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
         {/* </div> */}
       </div>
       {content}
+      <br></br>
+      {itemImage &&
+        <div className="col-span-1 px-6 flex justify-center md:justify-start">
+          <div className="relative h-24 w-48 overflow-hidden rounded-xl md:h-52 md:w-96">
+            <Image alt="about-me-image" className="h-full w-full object-cover" src={itemImage}/>
+          </div>
+        </div>
+      }
     </div>
   );
 });

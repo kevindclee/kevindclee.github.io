@@ -29,6 +29,10 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
+import project1pic from '../images/project1.png';
+import project2pic from '../images/project2.gif';
+import project3pic from '../images/project3.png';
+// import involvement1pic from '../images/involvement1.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -281,13 +285,13 @@ export const education: TimelineItem[] = [
     date: 'August 2020 - May 2023',
     location: 'Purdue University, College of Science',
     title: 'Master of Science in Computer Science',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p></p>,
   },
   {
     date: 'August 2014 - May 2020',
     location: 'The Ohio State University, College of Engineering',
     title: 'Bachelor of Science in Computer Science and Engineering',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p></p>,
   },
 ];
 
@@ -297,13 +301,11 @@ export const experience: TimelineItem[] = [
     location: 'Purdue University, Department of Computer Science',
     title: 'Graduate Teaching Assistant',
     content: (
-      <div>
-        <ul>
-          <li>Assisted professor in a Software Development in C class with over 400 students.</li>
-          <li>Designed homework and exam problems with the instruction team.</li>
-          <li>Held lab sessions, office hours, and virtual help sessions to assist students who needed help.</li>
-        </ul>
-      </div>
+      <p>
+        As a Graduate Teaching Assistant at Purdue University's Department of Computer Science, responsibilities included assisting the professor in a Software Development in C class with over 400 students. 
+        Collaboration with the instructional team led to the design of homework and exam problems, ensuring alignment with course objectives. 
+        Additionally, lab sessions, office hours, and virtual help sessions were conducted to provide personalized support and guidance to students in need.
+      </p>
     ),
   },
   {
@@ -311,13 +313,11 @@ export const experience: TimelineItem[] = [
     location: 'Wexner Medical Center, Department of Obstetrics and Gynecology',
     title: 'Student Research Assistant',
     content: (
-      <div>
-        <ul>
-          <li>Participated in Virtual Patient research, helping medical students to train for doctor-to-patient conversations.</li>
-          <li>Updated and maintained Speech to Text and Text to Speech components of Virtual Patient applications using Unity, C#, and Java.</li>
-          <li>Gained experience collaborating with a group of professionals from the medical field & natural language processing field.</li>
-        </ul>
-      </div>
+      <p>
+        As a Student Research Assistant at Wexner Medical Center's Department of Obstetrics and Gynecology, I contributed to Virtual Patient research aimed at enhancing medical students' training for doctor-to-patient conversations. 
+        This role involved updating and maintaining Speech to Text and Text to Speech components of Virtual Patient applications utilizing Unity, C#, and Java. 
+        Through collaboration with professionals from both the medical field and natural language processing field, I was able to gain valuable experience and insights into interdisciplinary teamwork and research methodologies.
+      </p>
     ),
   },
   {
@@ -325,13 +325,11 @@ export const experience: TimelineItem[] = [
     location: 'The Ohio State University, Department of Computer Science and Engineering',
     title: 'Undergraduate Teaching Assistant',
     content: (
-      <div>
-        <ul>
-          <li>Assisted professor in a Software Development Java class with 42 students.</li>
-          <li>Explained and clarified questions students had during office hours and closed lab.</li>
-          <li>Graded projects and homework; Successfully balanced student workload with teaching workload.</li>
-        </ul>
-      </div>
+      <p>
+        As an Undergraduate Teaching Assistant at The Ohio State University's Department of Computer Science and Engineering, I supported the professor in a Software Development Java class comprising 42 students. 
+        Duties included providing explanations and clarifications to students during office hours and closed lab sessions. 
+        Additionally, I was responsible for grading projects and homework, successfully managing student workload while fulfilling teaching responsibilities.
+      </p>
     ),
   },
 ];
@@ -352,6 +350,7 @@ export const projects: TimelineItem[] = [
         </a>
       </p>
     ),
+    itemImage: project1pic,
   },
   {
     date: 'February 2023 - May 2023',
@@ -369,6 +368,40 @@ export const projects: TimelineItem[] = [
       </p>
     ),
   },
+  {
+    date: 'December 2022 - January 2023',
+    location: 'En-core Playdata Bootcamp',
+    title: 'MyTraview',
+    content: (
+      <p>
+        MyTraview is a web application where users can leave reviews on everything related to travel (food, transportation, accommodation, tourist attractions, themed routes, etc.). It is built with Spring Boot, Tailwind CSS, and Material UI.   
+        The name "My Traview" was made by combining "My Travel" and "Review", meaning that it contains individual user's insightful and exciting travel reviews.
+        <br></br>
+        <br></br>
+        <a className="hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 sm:hover:text-teal-400" href="https://github.com/kevindclee/MyTraview" target="_blank" rel="noopener noreferrer">
+          <i>https://github.com/kevindclee/MyTraview</i>
+        </a>
+      </p>
+    ),
+    itemImage: project2pic,
+  },
+  {
+    date: 'April 2020',
+    location: 'The Ohio State University',
+    title: 'GameBot',
+    content: (
+      <p>
+        This project was Ohio State University Capstone Project for CSE 5914 (Knowledge-Based Systems) class. GameBot is a full stack web-based chatbot application that makes simultaneous game recommendations after each Q&A queries.  
+        Adopted IBM Watson Assistant platform and game data is provided from Giant Bomb database.  
+        <br></br>
+        <br></br>
+        <a className="hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 sm:hover:text-teal-400" href="https://github.com/kevindclee/GameBot" target="_blank" rel="noopener noreferrer">
+          <i>https://github.com/kevindclee/GameBot</i>
+        </a>
+      </p>
+    ),
+    itemImage: project3pic,
+  },
 ];
 
 export const publications: TimelineItem[] = [
@@ -379,6 +412,13 @@ export const publications: TimelineItem[] = [
     content: (
       <p>
         Maicher, K. R., Stiff, A., Scholl, M., White, M., Fosler-Lussier, E., Schuler, W., Lee, K., & Danforth, D. R. et al. (2022). Medical teacher, 1-7. Advance online publication.
+        <br></br>
+        <br></br>
+        This research paper shows development of an artificial intelligence (AI) system for Virtual Standardized Patients (VSPs) aimed at enhancing students' history-taking skills. 
+        The system integrates Automated Speech Recognition (ASR), hybrid AI for question identification, a classifier to select between ASR and AI systems, and automated speech generation. 
+        Analysis involving 620 first-year medical students from 2018 to 2021 showed that system accuracy improved significantly, reaching approximately 90% by 2021. 
+        Positive student feedback indicated the value of practicing with VSPs, suggesting a worthwhile learning experience. 
+        Overall, the novel hybrid dialogue system enables AI-driven VSPs to effectively respond to student questions, providing a valuable tool for trainees to refine their skills before engaging with human patients.
         <br></br>
         <br></br>
         <a className="hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 sm:hover:text-teal-400" href="https://doi.org/10.1080/0142159X.2022.2130216" target="_blank" rel="noopener noreferrer">
@@ -406,27 +446,29 @@ export const involvement: TimelineItem[] = [
     location: 'Google',
     title: 'Machine Learning Bootcamp ',
     content: (
-      <div>
-        <ul>
-          <li>Acquired skills in deep learning, computer vision, and natural language processing.</li>
-          <li>Gained knowledge of TensorFlow and completed Kaggle competition with top 7%.</li>
-          <li>Gained hands-on experience in ResNets, MobileNet, YOLO, U-Net, and Transformer Network.</li>
-        </ul>
-      </div>
+      <p>
+        Participated in Google's Machine Learning Bootcamp, acquiring skills in deep learning, computer vision, and natural language processing. 
+        Demonstrated proficiency in TensorFlow and achieved notable success by finishing within the top 7% in a Kaggle competition. 
+        Gained practical experience with advanced models including ResNets, MobileNet, YOLO, U-Net, and Transformer Network, further expanding knowledge of machine learning techniques and applications.
+        {/* <br></br>
+        <br></br>
+        <a className="hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 sm:hover:text-teal-400" href="https://youtu.be/XVrksI7EmiQ?si=9JkC7826hVsjFFLA" target="_blank" rel="noopener noreferrer">
+          <i>https://youtu.be/XVrksI7EmiQ?si=9JkC7826hVsjFFLA</i>
+        </a> */}
+      </p>
     ),
+    // itemImage: involvement1pic,
   },
   {
     date: 'May 2022 - December 2022',
     location: 'En-core',
     title: 'Playdata Bootcamp',
     content: (
-      <div>
-        <ul>
-          <li>Acquired skills in front end & back end development, and artificial intelligence applications.</li>
-          <li>Gained knowledge of JavaScript, React, Next.js, Spring Boot, MySQL, and Python.</li>
-          <li>Gained leadership experience through leading teams and project presentations</li>
-        </ul>
-      </div>
+      <p>
+        During my enrollment in the Playdata Bootcamp at En-core, I acquired a comprehensive skill set encompassing front end and back end development, as well as artificial intelligence applications. 
+        This included proficiency in JavaScript, React, Next.js, Spring Boot, MySQL, and Python. 
+        Additionally, I gained valuable leadership experience by leading teams and delivering project presentations, further enhancing my ability to collaborate effectively and communicate technical concepts.
+      </p>
     ),
   },
 ];
