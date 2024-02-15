@@ -89,9 +89,9 @@ export const heroData: Hero = {
         registrar and site builder.
       </p> */}
       <p className="prose-sm text-stone-200 mx-10 sm:prose-base lg:prose-lg">
-        Hi! I'm <strong className="text-stone-100">Kevin</strong>, Computer Science Masters student at <strong className="text-stone-100">Purdue University</strong>. 
+        Hi! I'm <strong className="text-stone-100">Kevin</strong>, a recent Computer Science Masters graduate from <strong className="text-stone-100">Purdue University</strong>. 
         <br></br>
-        My interest areas are: <strong className="text-stone-100">AI/ML, NLP, and LLMs</strong>. 
+        Areas of Interest: <strong className="text-stone-100">AI/ML, NLP, and LLMs</strong>
         <br></br>
         I am currently looking for following jobs: 
         <br></br>
@@ -152,7 +152,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Japanese',
-        level: 3,
+        level: 6,
       },
     ],
   },
@@ -161,15 +161,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Nextjs',
-        level: 8,
+        level: 10,
       },
       {
         name: 'React',
-        level: 8,
+        level: 10,
       },
       {
         name: 'Typescript',
-        level: 7,
+        level: 8,
       },
     ],
   },
@@ -178,11 +178,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Spring',
-        level: 8,
+        level: 10,
       },
       {
         name: 'Node.js',
-        level: 6,
+        level: 10,
       },
     ],
   },
@@ -311,10 +311,10 @@ export const experience: TimelineItem[] = [
   {
     date: 'May 2019 - May 2020',
     location: 'Wexner Medical Center, Department of Obstetrics and Gynecology',
-    title: 'Student Research Assistant',
+    title: 'Research Assistant',
     content: (
       <p>
-        As a Student Research Assistant at Wexner Medical Center's Department of Obstetrics and Gynecology, I contributed to Virtual Patient research aimed at enhancing medical students' training for doctor-to-patient conversations. 
+        As a Research Assistant at Wexner Medical Center's Department of Obstetrics and Gynecology, I contributed to Virtual Patient research aimed at enhancing medical students' training for doctor-to-patient conversations. 
         This role involved updating and maintaining Speech to Text and Text to Speech components of Virtual Patient applications utilizing Unity, C#, and Java. 
         Through collaboration with professionals from both the medical field and natural language processing field, I was able to gain valuable experience and insights into interdisciplinary teamwork and research methodologies.
       </p>
@@ -443,8 +443,8 @@ export const publications: TimelineItem[] = [
 export const involvement: TimelineItem[] = [
   {
     date: 'September 2023 - December 2023',
-    location: 'Google',
-    title: 'Machine Learning Bootcamp ',
+    // location: 'Google',
+    title: 'Google Machine Learning Bootcamp ',
     content: (
       <p>
         Participated in Google's Machine Learning Bootcamp, acquiring skills in deep learning, computer vision, and natural language processing. 
@@ -461,11 +461,11 @@ export const involvement: TimelineItem[] = [
   },
   {
     date: 'May 2022 - December 2022',
-    location: 'En-core',
-    title: 'Playdata Bootcamp',
+    // location: 'En-core',
+    title: 'En-core Playdata Bootcamp',
     content: (
       <p>
-        During my enrollment in the Playdata Bootcamp at En-core, I acquired a comprehensive skill set encompassing front end and back end development, as well as artificial intelligence applications. 
+        During my enrollment in the En-core Playdata Bootcamp at En-core, I acquired a comprehensive skill set encompassing front end and back end development, as well as artificial intelligence applications. 
         This included proficiency in JavaScript, React, Next.js, Spring Boot, MySQL, and Python. 
         Additionally, I gained valuable leadership experience by leading teams and delivering project presentations, further enhancing my ability to collaborate effectively and communicate technical concepts.
       </p>
