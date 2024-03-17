@@ -28,14 +28,12 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
         {/* </div> */}
       </div>
       {content}
-      <br></br>
+      <br></br> 
       {itemImage &&
         <div className="col-span-1 px-6 flex justify-center md:justify-start">
           <div className="relative h-24 w-48 overflow-hidden rounded-xl md:h-52 md:w-96">
             <Image alt="about-me-image" className="h-full w-full object-cover" src={itemImage}/>
           </div>
-          <br></br>
-          <br></br>
         </div>
       }
     </div>
