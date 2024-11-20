@@ -91,11 +91,13 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 mx-10 sm:prose-base lg:prose-lg">
         Hi! I'm <strong className="text-stone-100">Kevin</strong>, a recent Computer Science Masters graduate from <strong className="text-stone-100">Purdue University</strong>. 
         <br></br>
-        Areas of Interest: <strong className="text-stone-100">AI/ML, NLP, and LLMs</strong>
+        I completed my undergraduate studies at Ohio State University, majoring in Computer Science and Engineering.
         <br></br>
+        My research interests include <strong className="text-stone-100">AI/ML, Health Informatics, Natural Language Processing, and Large Language Models</strong>.
+        {/* <br></br>
         I am currently looking for following jobs: 
         <br></br>
-        <strong className="text-stone-100">AI/ML Engineer, Data Scientist, Software Engineer or Fullstack Developer</strong>.
+        <strong className="text-stone-100">AI/ML Engineer, Data Scientist, Software Engineer or Fullstack Developer</strong>. */}
       </p> 
     </>
   ),
