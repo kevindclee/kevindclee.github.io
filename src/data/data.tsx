@@ -91,9 +91,13 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 mx-10 sm:prose-base lg:prose-lg">
         Hi! I'm <strong className="text-stone-100">Kevin</strong>, a recent Computer Science Masters graduate from <strong className="text-stone-100">Purdue University</strong>. 
         <br></br>
-        I completed my undergraduate studies at Ohio State University, majoring in Computer Science and Engineering.
+        I completed my undergraduate studies at <strong className="text-stone-100">Ohio State University</strong>,
+        <br></br> 
+        majoring in Computer Science and Engineering.
         <br></br>
-        My research interests include <strong className="text-stone-100">AI/ML, Health Informatics, Natural Language Processing, and Large Language Models</strong>.
+        My research interests include <strong className="text-stone-100">AI/ML, Health Informatics,</strong> 
+        <br></br>
+        <strong className="text-stone-100">Natural Language Processing, and Large Language Models</strong>.
         {/* <br></br>
         I am currently looking for following jobs: 
         <br></br>
